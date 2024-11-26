@@ -1,0 +1,41 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff5722 !important;
+}
+
+/* Banner */
+.banner img {
+     max-height: 400px;
+    object-fit: cover;
+    display: flex;
+    
+}
+
+/* Produtos */
+.card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: #343a40;
+    color: #fff;
+}
+.col-6col-md-4col-lg-3{
+    width:569px;
+    height:616px;
+}
