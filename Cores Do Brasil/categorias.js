@@ -1,10 +1,54 @@
-// Lista de produtos
 const products = [
-    { id: 1, name: "Tênis Esportivo", price: 120.99, image: "Logo.png" },
-    { id: 2, name: "Kit 3 Camisas Sociais Slim", price: 80.49, image: "imagens/Camisas.jpg" },
-    { id: 3, name: "Relógio Elegante", price: 250.00, image: "imagens/Relogio.jpg" },
-    { id: 4, name: "Bolsa de Couro", price: 199.90, image: "imagens/Bolsa.jpg" },
+    { id: 1, name: "Kit 3 Camisas Sociais Masculina Slim de Manga Longa", category: "roupas", price: 120.99, image: "images produtos/roupas/Camisas.jpg" },
+    { id: 2, name: "Regata Basquete Masculina M10 Slam Jamaica - Preto", category: "roupas", price: 80.91, image: "images produtos/roupas/Regata.jpg" },
+    { id: 3, name: "Moletom Masculino Canguru Promocional", category: "roupas", price: 100.00, image: "images produtos/roupas/Moletom.jpg" },
+    { id: 4, name: "Vestido Longo Soltinho com Fenda", category: "roupas", price: 139.99, image: "images produtos/roupas/Vestido.jpg" },
+    { id: 5, name: "Kit 5 Camisetas Regatas Femininas Alça Grossa Coloridas", category: "roupas", price: 78.90, image: "images produtos/roupas/regata femenina.jpg" },
+    { id: 6, name: "Fone QCY T29 Bluetooth", category: "eletronicos", price: 129.99, image: "images produtos/eletronicos/Fone Bluetooth.jpg" },
+    { id: 7, name: "Apple iPhone 14 (128 GB) | Estelar", category: "eletronicos", price: 3899, image: "images produtos/eletronicos/Iphone.jpg" },
+    { id: 8, name: "Relógio Octea Lux Sport, Pulseira de metal, Azul, Acabamento em dourado", category: "eletronicos", price: 2.450, image: "images produtos/eletronicos/Relogio.jpg" },
+    { id: 9, name: "Echo Dot 5ª geração | O Echo Dot com o melhor som já lançado | Cor Preta", category: "eletronicos", price: 252.27, image: "images produtos/eletronicos/Echo.jpg" },
+    { id: 10, name: "Caixa de Som Bluetooth JBL Partybox Club 120 160W", category: "eletronicos", price: 2.180, image: "images produtos/eletronicos/caixa de som.jpg" },
+    { id: 11, name: "Tênis Esportivo", category: "acessorios", price: 199.90, image: "imagens/tenis.jpg" },
+    { id: 12, name: "Vestido Feminino", category: "acessorios", price: 150.00, image: "imagens/vestido.jpg" },
+    { id: 13, name: "Fone Bluetooth", category: "acessorios", price: 300.00, image: "imagens/fone.jpg" },
+    { id: 14, name: "Bolsa de Couro", category: "acessorios", price: 199.90, image: "imagens/bolsa.jpg" },
+    { id: 15, name: "Camiseta Casual", category: "acessorios", price: 80.49, image: "imagens/camisa.jpg" },
+    { id: 16, name: "Relógio Elegante", category: "calcados", price: 250.00, image: "imagens/relogio.jpg" },
+    { id: 17, name: "Smartphone X", category: "calcados", price: 1200.00, image: "imagens/smartphone.jpg" },
+    { id: 18, name: "Tênis Esportivo", category: "calcados", price: 199.90, image: "imagens/tenis.jpg" },
+    { id: 19, name: "Vestido Feminino", category: "calcados", price: 150.00, image: "imagens/vestido.jpg" },
+    { id: 20, name: "Fone Bluetooth", category: "calcados", price: 300.00, image: "imagens/fone.jpg" },
 ];
+
+// Função para navegar até uma categoria
+const navigateToCategory = (category) => {
+    const productGrid = document.getElementById("product-grid");
+    productGrid.innerHTML = ""; // Limpa os produtos existentes
+
+    // Filtra produtos da categoria
+    const filteredProducts = products.filter(product => product.category === category);
+
+    if (filteredProducts.length > 0) {
+        filteredProducts.forEach(product => {
+            const card = document.createElement("div");
+            card.className = "col-6 col-md-4 col-lg-3 mb-4";
+            card.innerHTML = `
+                <div class="card">
+                    <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">${product.name}</h5>
+                        <p class="card-text">R$ ${product.price.toFixed(2)}</p>
+                        <button class="btn btn-warning">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            `;
+            productGrid.appendChild(card);
+        });
+    } else {
+        productGrid.innerHTML = "<p class='text-center'>Nenhum produto encontrado nesta categoria.</p>";
+    }
+};
 
 // Gerenciamento de favoritos
 const getFavorites = () => JSON.parse(localStorage.getItem("favorites")) || [];
@@ -135,7 +179,7 @@ const renderCart = () => {
         const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
         const totalDiv = document.createElement("div");
         totalDiv.className = "text-end mt-3";
-        totalDiv.innerHTML = <h4>Total: R$ ${total.toFixed(2)}</h4>;
+        totalDiv.innerHTML = `Total: R$ ${total.toFixed(2)}`;
         cartGrid.appendChild(totalDiv);
     } else {
         cartGrid.innerHTML = "<p class='text-center'>Seu carrinho está vazio.</p>";

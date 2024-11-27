@@ -15,7 +15,7 @@ body {
 
 /* Banner */
 .banner img {
-     max-height: 400px;
+    max-height: 300px;
     object-fit: cover;
     display: flex;
     
