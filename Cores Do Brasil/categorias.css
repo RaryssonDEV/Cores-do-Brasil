@@ -1,0 +1,70 @@
+/* Header */
+header {
+    background-color: var(--vermelho);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1em 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+/* Logo */
+.navbar .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--branco);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .logo a:hover {
+    color: var(--amarelo);
+}
+
+/* Navbar Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--branco);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: var(--amarelo);
+}
+
+/* Navbar Icons */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icons .cart-icon img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-icons .cart-icon:hover img {
+    transform: scale(1.2);
+}
+

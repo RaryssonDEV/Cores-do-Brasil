@@ -1,6 +1,6 @@
 // Lista de produtos
 const products = [
-    { id: 1, name: "Kit 3 Camisas Sociais Masculina Slim de Manga Longa", price: 120.99, image: "images produtos/roupas/Camisas.jpg" },
+    { id: 1, name: "Kit 3 Camisas Sociais Masculina Slim de Manga Longa", price: 120.99, image: "images produtos/roupas/Camisas.jpg",},
     { id: 2, name: "Tênis Esportivo", price: 80.49, image: "images produtos/Calcados/TênisEsportivo.jpg" },
     { id: 3, name: "Regata Basquete Masculina M10 Slam Jamaica - Preto", price: 80.91, image: "images produtos/roupas/Regata.jpg" },
     { id: 4, name: "Moletom Masculino Canguru Promocional", price: 100.00, image: "images produtos/roupas/Moletom.jpg" },
@@ -8,9 +8,9 @@ const products = [
     { id: 6, name: "Kit 5 Camisetas Regatas Femininas Alça Grossa Coloridas", price: 78.90, image: "images produtos/roupas/regata femenina.jpg" },
     { id: 7, name: "Fone QCY T29 Bluetooth", price: 129.99, image: "images produtos/eletronicos/Fone Bluetooth.jpg" },
     { id: 8, name: "Apple iPhone 14 (128 GB) | Estelar", price: 3899, image: "images produtos/eletronicos/Iphone.jpg" },
-    { id: 9, name: "Relógio Octea Lux Sport, Pulseira de metal, Azul, Acabamento em dourado", price: 2.450, image: "images produtos/eletronicos/Relogio.jpg" },
+    { id: 9, name: "Relógio Octea Lux Sport, Pulseira de metal, Azul, Acabamento em dourado", price: 2450, image: "images produtos/eletronicos/Relogio.jpg" },
     { id: 10, name: "Echo Dot 5ª geração | O Echo Dot com o melhor som já lançado | Cor Preta", price: 252.27, image: "images produtos/eletronicos/Echo.jpg" },
-    { id: 11, name: "Caixa de Som Bluetooth JBL Partybox Club 120 160W", price: 2.180, image: "images produtos/eletronicos/caixa de som.jpg" },
+    { id: 11, name: "Caixa de Som Bluetooth JBL Partybox Club 120 160W", price: 2200, image: "images produtos/eletronicos/caixa de som.jpg" },
     { id: 12, name: "Tênis Nike Court Borough Low ", price: 599.99, image: "images produtos/Calcados/Nike.jpg" },
     { id: 13, name: "Tênis Shox 12 Molas", price: 329.00, image: "images produtos/Calcados/12mola.png" },
     { id: 14, name: "Tênis Fiber Fly All Black Recovery, Preto", price: 299.90, image: "images produtos/Calcados/Fly.jpg" },
@@ -74,7 +74,7 @@ const renderProducts = () => {
         card.className = "col-6 col-md-4 col-lg-3";
         card.innerHTML = `
             <div class="card">
-                <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                <img src="${product.image}" class="card-img card-img-top" alt="${product.name}">
                 <div class="card-body text-center">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">R$ ${product.price.toFixed(2)}</p>
@@ -105,7 +105,7 @@ const renderFavorites = () => {
             card.className = "col-6 col-md-4 col-lg-3";
             card.innerHTML = `
                 <div class="card">
-                    <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                    <img src="${product.image}" class="card-img card-img-top" alt="${product.name}">
                     <div class="card-body text-center">
                         <h5 class="card-title">${product.name}</h5>
                         <p class="card-text">R$ ${product.price.toFixed(2)}</p>
@@ -119,6 +119,7 @@ const renderFavorites = () => {
         favoritesGrid.innerHTML = "<p class='text-center'>Você ainda não tem produtos favoritos.</p>";
     }
 };
+
 
 // Renderizar carrinho
 const renderCart = () => {
@@ -157,10 +158,20 @@ const renderCart = () => {
         cartGrid.innerHTML = "<p class='text-center'>Seu carrinho está vazio.</p>";
     }
 };
-
+// Atualiza o ícone do carrinho (quantidade de itens)
+const renderCartIcon = () => {
+    const cart = getCart();
+    const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+    const cartIcon = document.getElementById("cart-count");
+    if (cartIcon) cartIcon.textContent = cartCount;
+};
 // Inicializar a página
 document.addEventListener("DOMContentLoaded", () => {
     renderProducts();
     renderFavorites();
     renderCart();
 });
+//Ir para a página de pagamentos
+function irPagamento(){
+    window.location = "pagamentos.html"
+}

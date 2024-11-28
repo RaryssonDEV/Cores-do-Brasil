@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra - Cores do Brasil</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="Logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Cores do Brasil</h1>
+    </header>
+    <main>
+        <section class="form-container">
+            <h2>Finalizar Compra</h2>
+            <form id="compra-form">
+                <label for="cartao">Número do Cartão:</label>
+                <input type="text" id="cartao" name="cartao" required>
+
+                <label for="titular">Nome do Titular:</label>
+                <input type="text" id="titular" name="titular" required>
+
+                <label for="validade">Data de Expiração:</label>
+                <input type="month" id="validade" name="validade" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <button type="submit">Finalizar Compra</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Cores do Brasil © 2024</p>
+    </footer>
+
+    <script>
+        document.getElementById('compra-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Compra realizada com sucesso!');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

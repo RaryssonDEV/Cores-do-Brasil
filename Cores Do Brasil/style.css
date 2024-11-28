@@ -5,6 +5,76 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Header */
+   /* Cabeçalho */
+   header {
+    background-color: #e63946; /* Cor Vermelha (Cores do Brasil) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+/* Logo */
+.navbar .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--branco);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .logo a:hover {
+    color: var(--amarelo);
+}
+
+/* Navbar Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--branco);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: var(--amarelo);
+}
+
+/* Navbar Icons */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icons .cart-icon img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-icons .cart-icon:hover img {
+    transform: scale(1.2);
+}
+
 
 /* Cabeçalho */
 .navbar-brand {
@@ -18,12 +88,17 @@ body {
     max-height: 300px;
     object-fit: cover;
     display: flex;
-    
 }
 
 /* Produtos */
 .card {
+    width: 300px; /* Largura fixa */
+    height: 400px; /* Altura fixa */
     transition: transform 0.2s ease-in-out;
+    margin: 15px; /* Espaçamento entre os cartões */
+    display: flex;
+    flex-direction: column; /* Certifica que o conteúdo dentro do card se ajusta */
+    justify-content: space-between; /* Ajusta o conteúdo para preencher o espaço */
 }
 
 .card:hover {
@@ -35,81 +110,54 @@ footer {
     background-color: #343a40;
     color: #fff;
 }
-.col-6col-md-4col-lg-3{
-    width:569px;
-    height:616px;
+
+/* Ajuste do grid */
+.col-6col-md-4col-lg-3 {
+    width: 300px; /* Ajustando para o mesmo tamanho do card */
+    height: 400px; /* Ajustando para o mesmo tamanho do card */
 }
-/* Estilos Gerais */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+/* Garantir que todas as imagens nos cards tenham o mesmo tamanho */
+.card-img {
+    width: 100%; /* A largura da imagem será 100% da largura do card */
+    height: 200px; /* Definir uma altura fixa para as imagens */
+    object-fit: cover; /* Garantir que a imagem seja recortada e preenchida corretamente sem distorção */
+    object-position: center; /* Centralizar a imagem dentro da área definida */
+}
+form {
+    max-width: 400px;
+    margin: auto;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-radius: 5px;
 }
 
-.navbar {
-    background-color: #05668d;
+.form-group {
+    margin-bottom: 1em;
 }
 
-.navbar-brand, .nav-link {
-    color: white !important;
+label {
+    display: block;
+    margin-bottom: 0.5em;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #f4b400 !important;
-}
-
-/* Formulários */
-.container {
-    max-width: 600px;
-    margin-top: 50px;
-}
-
-.login-form {
-    background-color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #05668d;
-    margin-bottom: 30px;
-}
-
-.form-group label {
-    font-weight: bold;
-}
-
-.btn-primary {
-    background-color: #05668d;
-    border-color: #05668d;
-    color: white;
-}
-
-.btn-primary:hover {
-    background-color: #04597d;
-    border-color: #04597d;
-}
-
-/* Footer */
-.footer {
-    background-color: #05668d;
-    color: white;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
+input, textarea {
     width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.footer p {
-    margin: 0;
+button {
+    display: block;
+    width: 100%;
+    padding: 0.7em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Links */
-a {
-    color: #05668d;
-}
-
-a:hover {
-    color: #f4b400;
-}
+button:hover {
+    background-color: #0056b3;
+}       

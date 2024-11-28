@@ -198,3 +198,68 @@ document.addEventListener("DOMContentLoaded", () => {
     renderFavorites();
     renderCart();
 });
+
+
+// Função para adicionar todos os produtos de uma categoria aos favoritos
+const addCategoryToFavorites = (category) => {
+    const filteredProducts = products.filter(product => product.category === category);
+    let favorites = getFavorites();
+
+    filteredProducts.forEach(product => {
+        if (!favorites.includes(product.id)) {
+            favorites.push(product.id);
+        }
+    });
+
+    saveFavorites(favorites);
+    renderFavorites();
+    alert(`Todos os produtos da categoria "${category}" foram adicionados aos favoritos.`);
+};
+
+// Função para adicionar todos os produtos de uma categoria ao carrinho
+const addCategoryToCart = (category) => {
+    const filteredProducts = products.filter(product => product.category === category);
+    let cart = getCart();
+
+    filteredProducts.forEach(product => {
+        const productInCart = cart.find(item => item.id === product.id);
+        if (productInCart) {
+            productInCart.quantity += 1; // Incrementa a quantidade se já estiver no carrinho
+        } else {
+            cart.push({ ...product, quantity: 1 }); // Adiciona ao carrinho se não estiver
+        }
+    });
+
+    saveCart(cart);
+    renderCart();
+    alert(`Todos os produtos da categoria "${category}" foram adicionados ao carrinho.`);
+};
+
+// Atualização no HTML (Exemplo de botões para categorias)
+// Exemplo: Inclua botões para chamar as funções acima
+document.addEventListener("DOMContentLoaded", () => {
+    const categoryButtonsContainer = document.getElementById("category-buttons");
+
+    // Exemplo de categorias disponíveis
+    const categories = ["roupas", "eletronicos", "acessorios", "calcados"];
+
+    categories.forEach(category => {
+        const buttonFavorites = document.createElement("button");
+        buttonFavorites.className = "btn btn-outline-primary m-2";
+        buttonFavorites.textContent = `Adicionar todos de ${category} aos Favoritos`;
+        buttonFavorites.onclick = () => addCategoryToFavorites(category);
+
+        const buttonCart = document.createElement("button");
+        buttonCart.className = "btn btn-outline-success m-2";
+        buttonCart.textContent = `Adicionar todos de ${category} ao Carrinho`;
+        buttonCart.onclick = () => addCategoryToCart(category);
+
+        categoryButtonsContainer.appendChild(buttonFavorites);
+        categoryButtonsContainer.appendChild(buttonCart);
+    });
+
+    renderProducts();
+    renderFavorites();
+    renderCart();
+    renderCartIcon();
+});
