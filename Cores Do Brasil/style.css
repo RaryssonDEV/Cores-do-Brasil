@@ -39,3 +39,77 @@ footer {
     width:569px;
     height:616px;
 }
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.navbar {
+    background-color: #05668d;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f4b400 !important;
+}
+
+/* Formulários */
+.container {
+    max-width: 600px;
+    margin-top: 50px;
+}
+
+.login-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #05668d;
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #05668d;
+    border-color: #05668d;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #04597d;
+    border-color: #04597d;
+}
+
+/* Footer */
+.footer {
+    background-color: #05668d;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Links */
+a {
+    color: #05668d;
+}
+
+a:hover {
+    color: #f4b400;
+}
