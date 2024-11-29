@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Cores do Brasil</title>
+    <link rel="shortcut icon" href="Logo.jpg" type="image/x-icon">
+    <style>
+        /* Paleta de cores */
+:root {
+    --vermelho: #e63946;
+    --amarelo: #f1fa3c;
+    --verde: #06d6a0;
+    --azul: #118ab2;
+    --branco: #ffffff;
+    --cinza-claro: #f8f9fa;
+    --cinza-escuro: #343a40;
+}
+
+/* Corpo da Página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cinza-claro);
+    color: var(--cinza-escuro);
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header nav {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+header nav h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: var(--amarelo);
+}
+
+/* Container Principal da Página Contato */
+.contato-container {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulário de Contato */
+.contato-container .form-group {
+    margin-bottom: 1.5em;
+}
+
+.contato-container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.contato-container input,
+.contato-container textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid var(--cinza-escuro);
+    border-radius: 4px;
+    background-color: var(--cinza-claro);
+    font-size: 1rem;
+    color: var(--cinza-escuro);
+}
+
+.contato-container input:focus,
+.contato-container textarea:focus {
+    border-color: var(--azul);
+    outline: none;
+}
+
+/* Botão */
+.btn {
+    width: 100%;
+    padding: 1em;
+    background-color: var(--verde);
+    color: var(--branco);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--amarelo);
+    color: var(--cinza-escuro);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 1em;
+    text-align: center;
+}
+
+footer .footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+footer .footer-container ul li a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+footer .footer-container ul li a:hover {
+    color: var(--amarelo);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><img src="imagens/logoBrasil.webp" alt="Logo Cores do Brasil" style="height: 40px; margin-right: 10px; vertical-align: middle;"> Cores do Brasil</h1>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="politicas.html">Políticas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato-container">
+            <h2>Entre em Contato Conosco</h2>
+            <p>Tem alguma dúvida ou sugestão? Estamos à disposição para ajudar! Preencha o formulário abaixo ou entre em contato pelos nossos canais:</p>
+
+            <h3>Formulário de Contato</h3>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+
+            <h3>Outros Canais de Contato</h3>
+            <p>Se preferir, você também pode nos contatar através dos seguintes meios:</p>
+            <ul>
+                <li><strong>Telefone:</strong> (11) 1234-5678</li>
+                <li><strong>Email:</strong> contato@coresdobrasil.com.br</li>
+                <li><strong>Instagram:</strong> <a href="https://instagram.com/coresdobrasil" target="_blank">instagram.com/coresdobrasil</a></li>
+                <li><strong>Facebook:</strong> <a href="https://facebook.com/coresdobrasil" target="_blank">facebook.com/coresdobrasil</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Cores do Brasil. Todos os direitos reservados.</p>
+            <ul>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="politicas.html">Políticas</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Sua mensagem foi enviada com sucesso! Entraremos em contato em breve.");
+        });
+    </script>
+</body>
+</html>

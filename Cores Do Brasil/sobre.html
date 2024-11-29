@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Cores do Brasil</title>
+    <link rel="shortcut icon" href="Logo.jpg" type="image/x-icon">
+    <style>
+        /* Paleta de cores */
+:root {
+    --vermelho: #e63946;
+    --amarelo: #f1fa3c;
+    --verde: #06d6a0;
+    --azul: #118ab2;
+    --branco: #ffffff;
+    --cinza-claro: #f8f9fa;
+    --cinza-escuro: #343a40;
+}
+
+/* Corpo da Página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cinza-claro);
+    color: var(--cinza-escuro);
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header nav {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+header nav h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: var(--amarelo);
+}
+
+/* Container Principal da Página Sobre Nós */
+.sobre-container {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 1em;
+    text-align: center;
+}
+
+footer .footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+footer .footer-container ul li a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+footer .footer-container ul li a:hover {
+    color: var(--amarelo);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><img src="imagens/logoBrasil.webp" alt="Logo Cores do Brasil" style="height: 40px; margin-right: 10px; vertical-align: middle;"> Cores do Brasil</h1>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="politicas.html">Políticas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sobre-container">
+            <h2>Quem Somos</h2>
+            <p>Bem-vindo à "Cores do Brasil", a plataforma que conecta as cores vibrantes da nossa bandeira à experiência única de comprar online. Nós acreditamos que as cores são a essência da nossa cultura e do nosso espírito, e queremos compartilhá-las com o mundo por meio de um mercado digital inovador, inclusivo e sustentável.</p>
+
+            <h3>Missão</h3>
+            <p>A nossa missão é oferecer uma experiência de compra única, que une qualidade, autenticidade e a riqueza das cores brasileiras. Buscamos promover o mercado de varejo de forma transparente, acessível e com a cara do Brasil.</p>
+
+            <h3>Visão</h3>
+            <p>Ser uma das maiores plataformas de e-commerce inspirada nas cores da bandeira do Brasil, trazendo para nossos clientes produtos de alta qualidade e contribuindo para o fortalecimento da cultura brasileira no mercado digital.</p>
+
+            <h3>Valores</h3>
+            <ul>
+                <li><strong>Inovação:</strong> Sempre buscando novas formas de melhorar a experiência de compra.</li>
+                <li><strong>Compromisso com a qualidade:</strong> Trabalhamos apenas com produtos de qualidade superior.</li>
+                <li><strong>Valorização da cultura brasileira:</strong> Cada cor e cada produto que oferecemos tem um significado único, enraizado na nossa cultura.</li>
+                <li><strong>Sustentabilidade:</strong> Nos esforçamos para promover práticas sustentáveis em todas as nossas operações.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Cores do Brasil. Todos os direitos reservados.</p>
+            <ul>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="politicas.html">Políticas</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

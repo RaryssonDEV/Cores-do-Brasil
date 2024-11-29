@@ -20,6 +20,46 @@ const products = [
     { id: 18, name: "Pulseira Berloque Com Trava de Segurança Banhado a Prata 925", price: 154.90, image: "images produtos/acessorios/Pulseira Berloque.jpg" },
     { id: 19, name: "Boné Five Panel Anth Co Aba Reta Original Strapback", price: 80.00, image: "images produtos/acessorios/Boné.jpg" },
     { id: 20, name: "Óculos de Sol Unissex Maya Jungle Polarizado", price: 119.90, image: "images produtos/acessorios/Oculos.jpg" },
+    { id: 21, name: "Tênis Adidas Ultraboost 22", price: 799.99, image: "images produtos/Calcados/TênisUltraboost22.jpg" },
+    { id: 22, name: "Tênis Vans Old Skool", price: 299.90, image: "images produtos/Calcados/vans.jpg" },
+    { id: 23, name: "Bota Timberland 6 Polegadas", price: 599.00, image: "images produtos/Calcados/BotaAmarela.jpg" },
+    { id: 24, name: "Tênis New Balance 574", price: 350.00, image: "images produtos/Calcados/NewBalance.jpg" },
+    { id: 25, name: "Sapatênis Masculino Levis", price: 180.00, image: "images produtos/Calcados/Levis.jpg" },
+    { id: 26, name: "Tênis Nike Air Max 270 React", price: 799.99, image: "images produtos/Calcados/Air Max270.jpg" },
+    { id: 27, name: "Tênis Puma Suede Classic", price: 450.00, image: "images produtos/Calcados/Puma Suede.jpg" },
+    { id: 28, name: "Tênis Mizuno Wave Rider 24",  price: 549.90, image: "images produtos/Calcados/Mizuno.jpg" },
+    { id: 29, name: "Bota Chelsea Couro Masculina", price: 499.99, image: "images produtos/Calcados/Bota2.jpg" },
+    { id: 30, name: "Sandália Feminina Usaflex Conforto",price: 169.90, image: "images produtos/Calcados/Sandalia.jpg" },
+    { id: 31, name: "Jaqueta Masculina Jeans", price: 179.99, image: "images produtos/roupas/Jaquetajpg.jpg" },
+    { id: 32, name: "Blusa de Frio Feminina Tricot", price: 89.90, image: "images produtos/roupas/BlusaMangaLonga.jpg" },
+    { id: 33, name: "Calça Jeans Masculina Slim Fit", price: 119.00, image: "images produtos/roupas/CalcaJeans.jpg" },
+    { id: 34, name: "Saia Longa Estampada",  price: 89.90, image: "images produtos/roupas/Saia.jpg" },
+    { id: 35, name: "Camiseta Básica Masculina", price: 49.99, image: "images produtos/roupas/CamisaBasica.webp" },
+    { id: 36, name: "Vestido Floral Feminino",  price: 135.00, image: "images produtos/roupas/VestidoFloral.jpg" },
+    { id: 37, name: "Shorts Masculino Sport", price: 65.00, image: "images produtos/roupas/Short.jpg" },
+    { id: 38, name: "Blusa Polo Masculina", price: 89.90, image: "images produtos/roupas/Polo.jpg" },
+    { id: 39, name: "Jaqueta Bomber Feminina",  price: 199.99, image: "images produtos/roupas/Bomber.jpg" },
+    { id: 40, name: "Macacão Jeans Feminino", price: 149.90, image: "images produtos/roupas/Macacao.jpg" },
+    { id: 41, name: "Cinto Masculino Couro",  price: 89.99, image: "images produtos/acessorios/cinto.jpg" },
+    { id: 42, name: "Carteira de Couro Masculina", price: 99.90, image: "images produtos/acessorios/carteira.jpg" },
+    { id: 43, name: "Relógio Casio F91W",  price: 129.90, image: "images produtos/acessorios/rélogio2.jpg" },
+    { id: 44, name: "Pulseira Masculina Couro e Aço", price: 45.00, image: "images produtos/acessorios/pulseira.jpg" },
+    { id: 45, name: "Capa de Celular iPhone 14",  price: 49.90, image: "images produtos/acessorios/capaiphone.jpg" },
+    { id: 46, name: "Mochila Masculina de Couro", price: 249.00, image: "images produtos/acessorios/mochila.jpg" },
+    { id: 47, name: "Fone de Ouvido JBL Tune 500BT", price: 199.99, image: "images produtos/acessorios/Jbl.jpg" },
+    { id: 48, name: "Óculos de Sol Ray-Ban Wayfarer",  price: 450.00, image: "images produtos/acessorios/Rayban.jpg" },
+    { id: 49, name: "Chaveiro Personalizado de Aço Inoxidável",  price: 29.90, image: "images produtos/acessorios/chaveiro.jpg" },
+    { id: 50, name: "Luvas de Inverno Unissex",  price: 59.99, image: "images produtos/acessorios/Luvas.jpg" },
+    { id: 51, name: "Smartwatch Samsung Galaxy Watch 5",  price: 1099.00, image: "images produtos/eletronicos/relogiogalaxy.jpg" },
+    { id: 52, name: "Fone de Ouvido Sony WH-1000XM5",  price: 1599.00, image: "images produtos/eletronicos/Sony.jpg" },
+    { id: 53, name: "TV LED Samsung 50\" 4K",  price: 2799.00, image: "images produtos/eletronicos/tv.jpg" },
+    { id: 54, name: "Laptop Dell Inspiron 15",  price: 3500.00, image: "images produtos/eletronicos/notebook.jpg" },
+    { id: 55, name: "Câmera Canon EOS Rebel T7",  price: 2300.00, image: "images produtos/eletronicos/camera.jpg" },
+    { id: 56, name: "Drone DJI Mini 2", price: 2999.00, image: "images produtos/eletronicos/drone.jpg" },
+    { id: 57, name: "Tablet Samsung Galaxy Tab S7",  price: 2100.00, image: "images produtos/eletronicos/tablet.jpg" },
+    { id: 58, name: "Console Playstation 5",  price: 4999.00, image: "images produtos/eletronicos/play5.jpg" },
+    { id: 59, name: "Câmera de Segurança Wi-Fi Intelbras", price: 499.90, image: "images produtos/eletronicos/seguranca.jpg" },
+    { id: 60, name: "Carregador Sem Fio Anker PowerWave",  price: 129.90, image: "images produtos/eletronicos/carregador.jpg" },  
 ];
 
 // Gerenciamento de favoritos
@@ -175,3 +215,11 @@ document.addEventListener("DOMContentLoaded", () => {
 function irPagamento(){
     window.location = "pagamentos.html"
 }
+// Função para remover um favorito específico
+function removeFavorito(itemId) {
+    const item = document.getElementById('item-' + itemId);
+    if (item) {
+        item.remove();  // Remove o item da lista
+    }
+}
+

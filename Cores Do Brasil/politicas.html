@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas - Cores do Brasil</title>
+    <link rel="shortcut icon" href="Logo.jpg" type="image/x-icon">
+    <style>
+        /* Paleta de cores */
+:root {
+    --vermelho: #e63946;
+    --amarelo: #f1fa3c;
+    --verde: #06d6a0;
+    --azul: #118ab2;
+    --branco: #ffffff;
+    --cinza-claro: #f8f9fa;
+    --cinza-escuro: #343a40;
+}
+
+/* Corpo da Página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cinza-claro);
+    color: var(--cinza-escuro);
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header nav {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+header nav h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: var(--amarelo);
+}
+
+/* Container Principal da Página Políticas */
+.politicas-container {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: var(--branco);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 1em;
+    text-align: center;
+}
+
+footer .footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+footer .footer-container ul li a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+footer .footer-container ul li a:hover {
+    color: var(--amarelo);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><img src="imagens/logoBrasil.webp" alt="Logo Cores do Brasil" style="height: 40px; margin-right: 10px; vertical-align: middle;"> Cores do Brasil</h1>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="politicas.html">Políticas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="politicas-container">
+            <h2>Políticas do Projeto</h2>
+
+            <p>Bem-vindo à seção de Políticas do "Cores do Brasil". Aqui, você encontrará informações sobre como trabalhamos para oferecer uma experiência segura, transparente e de qualidade a todos os nossos clientes.</p>
+
+            <h3>Política de Privacidade</h3>
+            <p>Levamos a sua privacidade a sério. Todos os dados fornecidos ao "Cores do Brasil" são protegidos por criptografia e não serão compartilhados com terceiros sem o seu consentimento explícito. Nosso compromisso é garantir que suas informações pessoais sejam mantidas em sigilo, seguindo as regulamentações de proteção de dados aplicáveis.</p>
+
+            <h3>Política de Devolução</h3>
+            <p>Você pode solicitar a devolução de um produto em até 30 dias após o recebimento, desde que o item esteja em perfeitas condições e na embalagem original. Caso o produto apresente defeito de fabricação, o prazo para devolução será estendido de acordo com a legislação vigente.</p>
+
+            <h3>Política de Troca</h3>
+            <p>A troca de produtos pode ser realizada em até 30 dias após a compra, desde que o item esteja em sua embalagem original e sem sinais de uso. O processo de troca será realizado de forma rápida e sem custos adicionais para o cliente.</p>
+
+            <h3>Política de Pagamento</h3>
+            <p>Todos os pagamentos são processados de maneira segura, através de sistemas de pagamento reconhecidos e com a garantia de criptografia das informações. Aceitamos diversas formas de pagamento, incluindo cartões de crédito e boleto bancário.</p>
+
+            <h3>Política de Envio</h3>
+            <p>Oferecemos diversas opções de envio para que você possa escolher o melhor para o seu caso. Todos os envios são realizados por transportadoras parceiras e o prazo de entrega pode variar de acordo com sua localização e a opção de envio escolhida.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Cores do Brasil. Todos os direitos reservados.</p>
+            <ul>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="politicas.html">Políticas</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

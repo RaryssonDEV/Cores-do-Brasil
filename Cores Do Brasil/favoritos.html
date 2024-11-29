@@ -3,18 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favoritos | E-Shop</title>
+    <title>Favoritos | Cores Do Brasil</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="Logo.jpg" type="image/x-icon">
+    <style>
+        /* Estilos personalizados para o botão Limpar Favoritos */
+        #clear-favorites {
+            background-color: #ff6b6b; /* Cor suave de vermelho */
+            color: white;
+            border: none;
+            padding: 8px 18px; /* Botão menor */
+            font-size: 14px; /* Font menor */
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s ease-in-out;
+            text-align: center;
+        }
+
+        #clear-favorites:hover {
+            background-color: #ff4d4d; /* Cor de hover */
+            transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+            cursor: pointer;
+        }
+
+        #clear-favorites:focus {
+            outline: none;
+        }
+
+        #clear-favorites:active {
+            transform: scale(1.02); /* Efeito de clique */
+        }
+
+        /* Sombra suave para destacar */
+        #clear-favorites {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #clear-favorites:focus {
+            box-shadow: 0 0 0 0.2rem rgba(255, 107, 107, 0.5);
+        }
+
+        /* Adicionando algum espaçamento no botão */
+        #favorites-actions {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
-        <nav class="navbar">
+        <div class="navbar">
+            <!-- Logo -->
             <div class="logo">
-                <a href="index.html">Cores do Brasil</a>
+                <a href="index.html">
+                    <img src="imagens/logoBrasil.webp" alt="Cores do Brasil Logo" style="height: 50px; vertical-align: middle;">
+                </a>
             </div>
+            
+            <!-- Título -->
+            <h1 style="display: inline; margin-left: 10px; color: white;">Cores do Brasil</h1>
+    
+            <!-- Links de Navegação -->
             <ul class="navbar-links">
                 <li><a href="login.html">Login</a></li>
                 <li><a href="index.html">Início</a></li>
@@ -27,11 +76,10 @@
                     <img src="imagens/carrinho-de-compras.png" alt="Carrinho">
                 </a>
             </div>
-        </nav>
+        </div>
     </header>
 
-
-    <!-- Título -->
+    <!-- Favoritos -->
     <div class="container mt-4">
         <h2 class="text-center mb-4">Seus Favoritos</h2>
         <div class="row g-3" id="favorites-grid">
@@ -39,11 +87,33 @@
         </div>
     </div>
 
+    <div id="favorites-actions" class="text-center">
+        <!-- Botão de limpar favoritos com novo estilo -->
+        <button id="clear-favorites" class="btn btn-danger mt-3">Limpar Favoritos</button>
+    </div>
+
     <!-- Rodapé -->
-    <footer class="bg-dark text-white text-center p-3 mt-4">
-        <p>&copy; 2024 Cores Do Brasil. Todos os direitos reservados.</p>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Cores do Brasil. Todos os direitos reservados.</p>
+            <ul>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="politicas.html">Políticas</a></li>
+            </ul>
+        </div>
     </footer>
 
     <script src="script2.0.js"></script>
+    <script>
+        // Função para limpar os favoritos
+        document.getElementById("clear-favorites").addEventListener("click", function() {
+            // Limpar os favoritos no armazenamento local ou no estado da página
+            localStorage.removeItem("favoriteItems"); // Ou outro método de armazenamento
+            // Limpar o conteúdo exibido na página
+            document.getElementById("favorites-grid").innerHTML = '';
+            alert("Favoritos limpos com sucesso!");
+        });
+    </script>
 </body>
 </html>

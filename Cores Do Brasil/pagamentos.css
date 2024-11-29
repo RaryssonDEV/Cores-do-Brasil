@@ -1,9 +1,8 @@
 /* Paleta De Cores */
 :root {
-    --vermelho: #e63946;
-    --amarelo: #f1fa3c;
-    --verde: #06d6a0;
-    --azul: #118ab2;
+    --verde-brasil: #009c3b; /* Verde Brasil */
+    --amarelo-brasil: #ffcc00; /* Amarelo Brasil */
+    --azul-brasil: #3e4095; /* Azul Brasil */
     --branco: #ffffff;
     --cinza-claro: #f8f9fa;
     --cinza-escuro: #343a40;
@@ -20,7 +19,7 @@ body {
 
 /* Header */
 header nav {
-    background-color: var(--vermelho);
+    background-color: var(--verde-brasil); /* Verde Brasil */
     color: var(--branco);
     display: flex;
     justify-content: space-between;
@@ -46,7 +45,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: var(--amarelo);
+    color: var(--amarelo-brasil); /* Amarelo Brasil */
 }
 
 /* Container Principal */
@@ -83,7 +82,7 @@ header nav ul li a:hover {
 
 .pagamento-form input:focus,
 .pagamento-form textarea:focus {
-    border-color: var(--azul);
+    border-color: var(--azul-brasil); /* Azul Brasil */
     outline: none;
 }
 
@@ -91,7 +90,7 @@ header nav ul li a:hover {
 .btn {
     width: 100%;
     padding: 1em;
-    background-color: var(--verde);
+    background-color: var(--verde-brasil); /* Verde Brasil */
     color: var(--branco);
     border: none;
     border-radius: 4px;
@@ -100,13 +99,13 @@ header nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: var(--amarelo);
+    background-color: var(--amarelo-brasil); /* Amarelo Brasil */
     color: var(--cinza-escuro);
 }
 
 /* Footer */
 footer {
-    background-color: var(--azul);
+    background-color: var(--azul-brasil); /* Azul Brasil */
     color: var(--branco);
     padding: 1em;
     text-align: center;
@@ -128,5 +127,5 @@ footer .footer-container ul li a {
 }
 
 footer .footer-container ul li a:hover {
-    color: var(--amarelo);
+    color: var(--amarelo-brasil); /* Amarelo Brasil */
 }

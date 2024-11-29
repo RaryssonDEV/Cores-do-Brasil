@@ -1,6 +1,6 @@
 /* Header */
 header {
-    background-color: var(--vermelho);
+    background-color: #009b3a; /* Verde bandeira */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1em 0;
 }
@@ -18,13 +18,13 @@ header {
 .navbar .logo a {
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--branco);
+    color: #ffffff; /* Branco */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .navbar .logo a:hover {
-    color: var(--amarelo);
+    color: #fdd835; /* Amarelo bandeira */
 }
 
 /* Navbar Links */
@@ -43,13 +43,13 @@ header {
 .navbar-links a {
     text-decoration: none;
     font-size: 1.1rem;
-    color: var(--branco);
+    color: #ffffff; /* Branco */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-    color: var(--amarelo);
+    color: #fdd835; /* Amarelo bandeira */
 }
 
 /* Navbar Icons */
@@ -67,4 +67,3 @@ header {
 .navbar-icons .cart-icon:hover img {
     transform: scale(1.2);
 }
-

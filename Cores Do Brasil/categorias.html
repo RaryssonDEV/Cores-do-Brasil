@@ -8,66 +8,104 @@
     <link rel="stylesheet" href="categorias.css">
     <link rel="shortcut icon" href="Logo.jpg" type="image/x-icon">
     <style>
-        /* Estilos personalizados para os botões e categorias */
-        .btn-categoria {
-            background-color: #ffcc00; /* Cor Amarela (Cores do Brasil) */
-            color: #2e2e2e; /* Cor escura para texto */
-            border: none;
-            font-weight: bold;  
-            padding: 12px 20px;
-            border-radius: 8px;
-            text-transform: uppercase;
-            transition: background-color 0.3s, transform 0.3s;
-        }
+    :root {
+    --vermelho: #e63946;
+    --amarelo: #f1fa3c;
+    --verde: #06d6a0;
+    --azul: #118ab2;
+    --branco: #ffffff;
+    --cinza-claro: #f8f9fa;
+    --cinza-escuro: #343a40;
+}
+    /* Estilos personalizados para os botões e categorias */
+.btn-categoria {
+    background-color: #fdd835; /* Amarelo bandeira */
+    color: #003580; /* Azul escuro inspirado na bandeira */
+    border: none;
+    font-weight: bold;  
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+}
 
-        .btn-categoria:hover {
-            background-color: #e6b800; /* Cor amarela mais escura no hover */
-            transform: scale(1.05);
-        }
+.btn-categoria:hover {
+    background-color: #e0c30d; /* Amarelo mais escuro no hover */
+    transform: scale(1.05);
+}
 
-        /* Estilos para os cards */
-        .card {
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
+/* Estilos para os cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-        .card-body {
-            background-color: #f8f9fa; /* Cor de fundo suave */
-            border-radius: 10px;
-        }
+.card-body {
+    background-color: #f0f4f9; /* Azul muito claro e suave */
+    border-radius: 10px;
+}
 
-        /* Cabeçalho */
-        header {
-            background-color: #e63946; /* Cor Vermelha (Cores do Brasil) */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
+/* Cabeçalho */
+header {
+    background-color: #009b3a; /* Verde bandeira */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
 
-        .navbar a {
-            color: #ffffff;
-            font-size: 1.1rem;
-            text-decoration: none;
-            margin-right: 20px;
-        }
+.navbar a {
+    color: #ffffff; /* Branco */
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-right: 20px;
+}
 
-        .navbar a:hover {
-            color: #ffcc00; /* Cor Amarela no hover */
-        }
+.navbar a:hover {
+    color: #fdd835; /* Amarelo bandeira no hover */
+}
 
-        footer {
-            background-color: #2e2e2e; /* Cor Escura para o footer */
-            color: #ffffff;
-            padding: 20px;
-        }
+/* Rodapé */
+/* Rodapé */
+footer {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 1em;
+    text-align: center;
+}
+
+footer .footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+footer .footer-container ul li a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+footer .footer-container ul li a:hover {
+    color: var(--amarelo);
+}
+
     </style>
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
-        <nav class="navbar">
+        <div class="navbar">
+            <!-- Logo -->
             <div class="logo">
-                <a href="index.html">Cores do Brasil</a>
+                <a href="index.html">
+                    <img src="imagens/logoBrasil.webp" alt="Cores do Brasil Logo" style="height: 50px; vertical-align: middle;">
+                </a>
             </div>
+            
+            <!-- Título -->
+            <h1 style="display: inline; margin-left: 10px; color: white;">Cores do Brasil</h1>
+    
+            <!-- Links de Navegação -->
             <ul class="navbar-links">
                 <li><a href="login.html">Login</a></li>
                 <li><a href="index.html">Início</a></li>
@@ -127,10 +165,16 @@
     </div>
 
     <!-- Rodapé -->
-    <footer class="bg-dark text-white text-center p-3 mt-4">
-        <p>&copy; 2024 Cores Do Brasil. Todos os direitos reservados.</p>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Cores do Brasil. Todos os direitos reservados.</p>
+            <ul>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="politicas.html">Políticas</a></li>
+            </ul>
+        </div>
     </footer>
-    
     <script src="categorias2.0.js"></script>
 </body>
 </html>

@@ -1,14 +1,25 @@
+:root {
+    --vermelho: #e63946;
+    --amarelo: #f1fa3c;
+    --verde: #06d6a0;
+    --azul: #118ab2;
+    --branco: #ffffff;
+    --cinza-claro: #f8f9fa;
+    --cinza-escuro: #343a40;
+}
+
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Fundo neutro */
     margin: 0;
     padding: 0;
 }
+
 /* Header */
-   /* Cabeçalho */
-   header {
-    background-color: #e63946; /* Cor Vermelha (Cores do Brasil) */
+/* Cabeçalho */
+header {
+    background-color: #009b3a; /* Verde bandeira */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -25,13 +36,13 @@ body {
 .navbar .logo a {
     font-size: 1.8rem;
     font-weight: bold;
-    color: var(--branco);
+    color: #ffffff; /* Branco */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .navbar .logo a:hover {
-    color: var(--amarelo);
+    color: #fdd835; /* Amarelo bandeira */
 }
 
 /* Navbar Links */
@@ -50,13 +61,13 @@ body {
 .navbar-links a {
     text-decoration: none;
     font-size: 1.1rem;
-    color: var(--branco);
+    color: #ffffff; /* Branco */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .navbar-links a:hover {
-    color: var(--amarelo);
+    color: #fdd835; /* Amarelo bandeira */
 }
 
 /* Navbar Icons */
@@ -75,12 +86,11 @@ body {
     transform: scale(1.2);
 }
 
-
 /* Cabeçalho */
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #ff5722 !important;
+    color: #0046ad !important; /* Azul bandeira */
 }
 
 /* Banner */
@@ -99,16 +109,40 @@ body {
     display: flex;
     flex-direction: column; /* Certifica que o conteúdo dentro do card se ajusta */
     justify-content: space-between; /* Ajusta o conteúdo para preencher o espaço */
+    background-color: #ffffff; /* Fundo branco */
+    border: 2px solid #009b3a; /* Borda verde bandeira */
+    border-radius: 5px;
 }
 
 .card:hover {
     transform: scale(1.05);
+    border-color: #fdd835; /* Amarelo bandeira no hover */
 }
 
 /* Rodapé */
 footer {
-    background-color: #343a40;
-    color: #fff;
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 1em;
+    text-align: center;
+}
+
+footer .footer-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+footer .footer-container ul li a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+footer .footer-container ul li a:hover {
+    color: var(--amarelo);
 }
 
 /* Ajuste do grid */
@@ -116,19 +150,24 @@ footer {
     width: 300px; /* Ajustando para o mesmo tamanho do card */
     height: 400px; /* Ajustando para o mesmo tamanho do card */
 }
+
 /* Garantir que todas as imagens nos cards tenham o mesmo tamanho */
 .card-img {
     width: 100%; /* A largura da imagem será 100% da largura do card */
     height: 200px; /* Definir uma altura fixa para as imagens */
     object-fit: cover; /* Garantir que a imagem seja recortada e preenchida corretamente sem distorção */
     object-position: center; /* Centralizar a imagem dentro da área definida */
+    border-bottom: 2px solid #0046ad; /* Linha azul bandeira abaixo da imagem */
 }
+
+/* Formulários */
 form {
     max-width: 400px;
     margin: auto;
     padding: 1em;
-    background-color: #f9f9f9;
+    background-color: #ffffff; /* Fundo branco */
     border-radius: 5px;
+    border: 1px solid #009b3a; /* Borda verde bandeira */
 }
 
 .form-group {
@@ -138,12 +177,13 @@ form {
 label {
     display: block;
     margin-bottom: 0.5em;
+    color: #0046ad; /* Azul bandeira */
 }
 
 input, textarea {
     width: 100%;
     padding: 0.5em;
-    border: 1px solid #ccc;
+    border: 1px solid #009b3a; /* Borda verde bandeira */
     border-radius: 5px;
 }
 
@@ -151,13 +191,31 @@ button {
     display: block;
     width: 100%;
     padding: 0.7em;
-    background-color: #007bff;
-    color: white;
+    background-color: #0046ad; /* Azul bandeira */
+    color: #ffffff; /* Branco */
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
-}       
+    background-color: #009b3a; /* Verde bandeira */
+}
+
+/* Botões dentro dos cards */
+.card button {
+    background-color: #0046ad; /* Azul bandeira */
+    color: #ffffff; /* Branco */
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #fdd835; /* Amarelo bandeira */
+    color: #0046ad; /* Azul bandeira */
+}
