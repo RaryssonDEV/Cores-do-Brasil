@@ -108,19 +108,6 @@
 
     <script src="script2.0.js"></script>
     <script>
-        // Função para verificar se há itens no carrinho antes de ir para o pagamento
-        function irPagamento() {
-            // Verificar se o carrinho contém itens
-            const cartItems = localStorage.getItem("cartItems"); // Acesse os itens do carrinho
-            if (cartItems && JSON.parse(cartItems).length > 0) {
-                // Redirecionar para a página de pagamento
-                window.location.href = "pagamento.html";
-            } else {
-                // Exibir uma mensagem de aviso
-                alert("Seu carrinho está vazio. Adicione itens antes de prosseguir.");
-            }
-        }
-
         // Função para limpar o carrinho
         document.getElementById("clear-cart").addEventListener("click", function() {
             // Limpar os itens do carrinho no armazenamento local
