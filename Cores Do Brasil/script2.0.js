@@ -39,7 +39,7 @@ const products = [
     { id: 37, name: "Shorts Masculino Sport", price: 65.00, image: "images produtos/roupas/Short.jpg" },
     { id: 38, name: "Blusa Polo Masculina", price: 89.90, image: "images produtos/roupas/Polo.jpg" },
     { id: 39, name: "Jaqueta Bomber Feminina",  price: 199.99, image: "images produtos/roupas/Bomber.jpg" },
-    { id: 40, name: "Macacão Jeans Feminino", price: 149.90, image: "images produtos/roupas/Macacao.jpg" },
+    { id: 40, name: "Macacão Jeans Feminino", price: 149.90, image: "images produtos/roupas/macacao.jpg" },
     { id: 41, name: "Cinto Masculino Couro",  price: 89.99, image: "images produtos/acessorios/cinto.jpg" },
     { id: 42, name: "Carteira de Couro Masculina", price: 99.90, image: "images produtos/acessorios/carteira.jpg" },
     { id: 43, name: "Relógio Casio F91W",  price: 129.90, image: "images produtos/acessorios/rélogio2.jpg" },
