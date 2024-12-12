@@ -1,4 +1,4 @@
-Cores do Brasil
+Projeto Do Curso de Desenvolvimento: Cores do Brasil
 
 ✅ Objetivos
 
