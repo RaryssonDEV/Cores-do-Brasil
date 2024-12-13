@@ -1,287 +1,150 @@
-Documentação do Projeto: Cores do Brasil
+# Documentação do Projeto: **Cores do Brasil**
 
-Visão Geral do Projeto
-
-O projeto Cores do Brasil é uma plataforma online voltada para conectar a indústria têxtil, pequenos comerciantes e consumidores, promovendo a moda sustentável e acessível. O objetivo principal é criar uma ponte entre empresas e clientes, disponibilizando um ambiente virtual de fácil navegação para a compra e venda de produtos.
-
+## Visão Geral do Projeto
+O **Cores do Brasil** é uma plataforma online que conecta a indústria têxil, pequenos comerciantes e consumidores, promovendo a moda sustentável e acessível. Nosso objetivo é ser a ponte entre empresas e clientes, oferecendo um ambiente virtual intuitivo e seguro para compra e venda de produtos nacionais.
 
 ---
 
-1. Objetivos do Projeto
+## Objetivos do Projeto
 
-Principais Metas
-
-Conectar a indústria têxtil aos consumidores finais, promovendo produtos nacionais.
-
-Apoiar pequenos comerciantes oferecendo visibilidade e ferramentas para aumentar as vendas.
-
-Facilitar o processo de compra e venda com uma interface moderna e acessível.
-
-Promover o consumo sustentável, destacando marcas com compromisso ambiental.
-
-Garantir segurança e confiabilidade nas transações.
-
-
+### Principais Metas:
+- Conectar a indústria têxil aos consumidores finais, destacando produtos nacionais.
+- Apoiar pequenos comerciantes com visibilidade e ferramentas para alavancar suas vendas.
+- Oferecer uma experiência de compra simples e moderna.
+- Incentivar o consumo sustentável, promovendo marcas comprometidas com o meio ambiente.
+- Garantir segurança e confiabilidade em todas as transações.
 
 ---
 
-2. Público-Alvo
+## Público-Alvo
 
-Pequenos e médios empresários do setor têxtil e artesanal.
-
-Consumidores em busca de produtos nacionais, sustentáveis e acessíveis.
-
-Jovens e adultos (18 a 40 anos), com forte presença em plataformas digitais.
-
-Empresas interessadas em ampliar sua presença online e atrair novos clientes.
-
-
+- Pequenos e médios empreendedores do setor têxil e artesanal.
+- Consumidores que buscam produtos nacionais e sustentáveis.
+- Jovens e adultos (18 a 40 anos) habituados ao uso de plataformas digitais.
+- Empresas interessadas em ampliar sua presença online e conquistar novos clientes.
 
 ---
 
-3. Funcionalidades do Sistema
+## Funcionalidades do Sistema
 
-Funcionalidades Principais
+### Funcionalidades Principais
 
-1. Página Inicial
+1. **Página Inicial**
+   - Apresentação da marca e produtos em destaque.
+   - Banners promocionais interativos e links para categorias.
 
-Apresentação da marca e produtos em destaque.
+2. **Catálogo com Empresas Parceiras**
+   - Listagem de empresas com logomarcas e informações.
+   - Busca e filtros por categoria, localização ou tipo de produto.
 
-Banners promocionais interativos e links rápidos para categorias.
+3. **Página Individual de Empresas**
+   - Perfil detalhado de cada empresa:
+     - Produtos vendidos.
+     - Informações de contato.
+     - Avaliações de clientes.
 
+4. **Página de Produtos**
+   - Detalhamento de até 120 produtos inicialmente.
+   - Galeria de imagens, descrição, preço e opções de compra.
 
+5. **Carrinho de Compras e Favoritos**
+   - Adicionar, remover e limpar itens.
+   - Permitir acesso à página de pagamento apenas com itens no carrinho.
 
-2. Catálogo com Empresas Parceiras
+6. **Login e Cadastro de Usuários**
+   - Login com verificação de email e senha.
+   - Mensagens de erro personalizadas para credenciais inválidas.
 
-Listagem das empresas com logomarcas e informações.
+7. **Sistema de Pagamento**
+   - Integração com APIs confiáveis (ex.: Mercado Pago, Stripe).
+   - Emissão de comprovantes para clientes e vendedores.
 
-Busca e filtros por categoria, localização ou tipo de produto.
+8. **Área de Avaliações**
+   - Feedback de clientes sobre empresas e produtos.
 
-
-
-3. Página Individual de Empresas
-
-Perfil completo da empresa, incluindo:
-
-Produtos vendidos.
-
-Informações de contato.
-
-Avaliações de clientes.
-
-
-
-
-4. Página de Produtos
-
-Detalhes de até 120 produtos (inicialmente).
-
-Galeria de imagens, descrição, preço e opções de compra.
-
-
-
-5. Carrinho de Compras e Favoritos
-
-Adicionar, remover e limpar itens.
-
-Validação para redirecionamento ao pagamento somente com produtos no carrinho.
-
-
-
-6. Login e Cadastro de Usuários
-
-Verificação de email e senha registrados.
-
-Mensagens de erro personalizadas em caso de credenciais inválidas.
-
-
-
-7. Sistema de Pagamento
-
-Integração com APIs confiáveis (ex.: Mercado Pago, Stripe).
-
-Emissão de comprovantes para cliente e vendedor.
-
-
-
-8. Área de Avaliações
-
-Espaço para clientes deixarem feedback sobre empresas e produtos.
-
-
-
-9. Administração e Monitoramento
-
-Dashboard administrativo para monitorar vendas, gerenciar estoque e obter insights.
-
-
-
-
+9. **Administração e Monitoramento**
+   - Dashboard para monitorar vendas, gerenciar estoque e obter insights.
 
 ---
 
-4. Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-Ferramentas de Desenvolvimento
+### Ferramentas de Desenvolvimento:
+- **Frontend**: HTML5, CSS3, JavaScript, Bootstrap.
+- **Backend**: Node.js com Express.
+- **Banco de Dados**: MySQL.
+- **Integração de Pagamentos**: APIs confiáveis (Mercado Pago ou Stripe).
 
-Frontend: HTML5, CSS3, JavaScript, Bootstrap
+### Ferramentas de Design:
+- **Figma**: Prototipação e design de interface.
+- **Adobe Illustrator**: Criação de elementos gráficos e logomarcas.
 
-Backend: Node.js com Express
+### Ambiente de Desenvolvimento:
+- **Editor de Código**: Visual Studio Code.
+- **Controle de Versão**: Git e GitHub.
+- **Hospedagem**: Servidor dedicado.
 
-Banco de Dados: MySQL
-
-Integração de Pagamentos: APIs de pagamento (Mercado Pago ou Stripe)
-
-
-Ferramentas de Design
-
-Figma: Para prototipação e design de interface.
-
-Adobe Illustrator: Criação de logomarcas e elementos gráficos.
-
-
-Ambiente de Desenvolvimento
-
-Editor de Código: Visual Studio Code
-
-Controle de Versão: Git e GitHub
-
-Hospedagem: Servidor dedicado (custo de R$ 2.000,00).
-
-
-Metodologias
-
-Scrum: Organização das tarefas em sprints semanais.
-
-UI/UX Design: Foco em interfaces intuitivas e experiência do usuário.
-
-
+### Metodologias:
+- **Scrum**: Tarefas organizadas em sprints semanais.
+- **UI/UX Design**: Interfaces intuitivas focadas na experiência do usuário.
 
 ---
 
-5. Estrutura do Sistema
+## Estrutura do Sistema
 
-Banco de Dados
+### Banco de Dados:
 
 Principais tabelas:
-
-Usuários: Armazena informações de login e dados cadastrais.
-
-Empresas: Informações sobre empresas parceiras.
-
-Produtos: Detalhes de cada item, como preço, descrição e estoque.
-
-Pedidos: Histórico de compras realizadas.
-
-Avaliações: Comentários e feedbacks deixados pelos clientes.
-
-
+- **Usuários**: Dados de login e informações cadastrais.
+- **Empresas**: Informações sobre empresas parceiras.
+- **Produtos**: Detalhes dos produtos, como preço e estoque.
+- **Pedidos**: Histórico de compras.
+- **Avaliações**: Feedback de clientes.
 
 ---
 
-6. Estrutura das Páginas
+## Estrutura das Páginas
 
-6.1 Página Inicial
+1. **Página Inicial**
+   - Banner interativo com promoções.
+   - Produtos mais vendidos e categorias em destaque.
 
-Elementos principais:
+2. **Catálogo de Empresas**
+   - Logomarcas das empresas parceiras.
+   - Busca e filtros por nome, localização e tipo de produto.
 
-Banner interativo com promoções.
+3. **Página de Produtos**
+   - Galeria de imagens.
+   - Botões para adicionar ao carrinho e aos favoritos.
+   - Descrição detalhada e preço.
 
-Categorias de destaque.
+4. **Carrinho de Compras e Favoritos**
+   - Visualização dos itens adicionados.
+   - Botão para limpar carrinho ou finalizar compra.
 
-Produtos mais vendidos.
-
-
-
-
----
-
-6.2 Catálogo de Empresas
-
-Seções:
-
-Logomarcas de empresas parceiras.
-
-Busca por filtros (nome, localização e tipo de produto).
-
-
-
+5. **Login e Cadastro**
+   - Login com validação de credenciais.
+   - Cadastro com coleta de dados pessoais.
 
 ---
 
-6.3 Página de Produtos
+## Design do Sistema
 
-Componentes principais:
-
-Galeria de imagens do produto.
-
-Botões interativos: adicionar ao carrinho e favoritos.
-
-Descrição detalhada e preço.
-
-
-
+### Paleta de Cores:
+- **Primárias**: Verde (sustentabilidade) e amarelo (energia e otimismo).
+- **Secundárias**: Branco e cinza (contraste e elegância).
 
 ---
 
-6.4 Carrinho de Compras e Favoritos
+## Orçamento e Cronograma
 
-Carrinho:
-
-Visualizar produtos adicionados.
-
-Botão para limpar carrinho e finalizar compra.
-
-
-Validação:
-
-Permitir acesso à página de pagamento apenas com itens no carrinho.
-
-
-
+- **Hospedagem**: R$ 2.000,00 (servidor dedicado).
+- **Desenvolvimento**: Estimativa baseada em sprints semanais (Scrum).
+- **Ferramentas de Design**: Licenças do Figma e Adobe Illustrator.
 
 ---
 
-6.5 Login e Cadastro
+## Considerações Finais
 
-Login:
+O **Cores do Brasil** busca se tornar referência no mercado de moda sustentável, conectando empresas e consumidores de maneira simples e eficiente. Com tecnologias modernas e foco na sustentabilidade, almejamos fortalecer o comércio nacional e incentivar o consumo consciente.
 
-Validação de email e senha registrados.
-
-Mensagem de erro em caso de dados inválidos.
-
-
-Cadastro:
-
-Coleta de dados pessoais e criação de credenciais de login.
-
-
-
-
----
-
-7. Design do Sistema
-
-Paleta de Cores
-
-Primárias: Verde (sustentabilidade) e amarelo (energia e otimismo).
-
-Secundárias: Branco e cinza, para contraste e elegância.
-
-
-
----
-
-8. Orçamento do Projeto
-
-
----
-
-9. Cronograma
-
-
----
-
-10. Considerações Finais
-
-O Cores do Brasil busca se estabelecer como uma referência no mercado de moda sustentável e acessível, conectando empresas e consumidores de maneira prática e eficiente. Com uma interface amigável, tecnologias modernas e um forte compromisso com a sustentabilidade, o projeto visa fortalecer o comércio nacional e promover o consumo consciente.
